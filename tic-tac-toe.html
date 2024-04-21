@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar con Contador y Botón</title>
+    <style>
+        body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.navbar-left {
+    flex: 1;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.new-game-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.new-game-btn:hover {
+    background-color: #45a049;
+}
+
+.score-counter {
+    margin-right: 20px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ebc6c6d5;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.board {
+    display: inline-block;
+    border: 2px solid #333;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 10px;
+}
+
+.row {
+    display: flex;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #333;
+    box-sizing: border-box;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.cell:hover {
+    background-color: #a8f3fa;
+}
+
+h1 {
+    color: #333;
+}
+
+/* Estilos para resaltar celdas al hacer clic */
+.cell.clicked {
+    background-color: #ddd;
+}
+
+/* Estilos para fichas X y O */
+.cell.x::after {
+    content: 'X';
+    color: #f00;
+}
+
+.cell.o::after {
+    content: 'O';
+    color: #00f;
+}
+
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <button class="new-game-btn">Nueva Partida</button>
+        </div>
+        <div class="navbar-right">
+            <span class="score-counter">Puntuación: <span id="score">0</span></span>
+        </div>
+    </nav>
+    <!-- Aquí va el contenido de tu página -->
+    <div class="container">
+        <h1>Tres en Raya</h1>
+        <div class="board">
+            <div class="row">
+                <div class="cell" id="cell-1"></div>
+                <div class="cell" id="cell-2"></div>
+                <div class="cell" id="cell-3"></div>
+            </div>
+            <div class="row">
+                <div class="cell" id="cell-4"></div>
+                <div class="cell" id="cell-5"></div>
+                <div class="cell" id="cell-6"></div>
+            </div>
+            <div class="row">
+                <div class="cell" id="cell-7"></div>
+                <div class="cell" id="cell-8"></div>
+                <div class="cell" id="cell-9"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="creditos">
+        <button class="creditos">Creditos</button>
+        <div>
+            <a href="https://www.flaticon.es/iconos-gratis/cancelar" title="cancelar iconos">Cancelar iconos creados por Stockio - Flaticon</a>
+            <a href="https://www.flaticon.es/iconos-gratis/circulo" title="circulo iconos">Circulo iconos creados por Freepik - Flaticon</a>
+        </div>
+
+    </footer>
+</body>
+</html>
